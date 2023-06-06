@@ -1,6 +1,5 @@
 @extends('layouts.admin')
 
-
 @section('content')
 <div class="d-flex justify-content-between my-3">
     <h1>Show projects table</h1>
@@ -42,9 +41,9 @@
 
                 <td>
 
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">View</a>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">Edit</a>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">Delete</a>
+                    <a class="btn btn-primary" href="{{route('admin.projects.show', $project)}}" role="button">View</a>
+                    <a class="btn btn-primary" href="{{route('admin.projects.edit', $project)}}" role="button">Edit</a>
+                    <a class="btn btn-primary" href="#" role="button">Delete</a>
 
                 </td>
 
