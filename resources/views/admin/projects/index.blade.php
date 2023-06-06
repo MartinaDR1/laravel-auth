@@ -2,8 +2,10 @@
 
 
 @section('content')
-<h1>Show projects table</h1>
-
+<div class="d-flex justify-content-between my-3">
+    <h1>Show projects table</h1>
+    <a name="" id="" class="btn btn-primary" href="{{route('admin.projects.create')}}" role="button">+</a>
+</div>
 
 <div class="table-responsive">
     <table class="table table-striped
@@ -33,7 +35,7 @@
                 <td scope="row">{{$project->id}}</td>
                 <td>{{$project->title}}</td>
                 <td>{{$project->slug}}</td>
-                <td>{{$project->descriprion}}</td>
+                <td>{{$project->description}}</td>
                 <td>{{$project->duration}}</td>
                 <td>{{$project->start_date}}</td>
                 <td>{{$project->end_date}}</td>
